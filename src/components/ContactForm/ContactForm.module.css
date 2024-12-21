@@ -1,19 +1,24 @@
-.Form {
-  display: inline-block;
-  border: 2px solid #363636;
-  border-radius: 2px;
-  padding: 10px;
-  margin-bottom: 8px;
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  margin-bottom: 35px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  gap: 15px;
+  & button {
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
 }
-.formGroup {
+
+.label {
   display: flex;
   flex-direction: column;
 }
-.formInput {
-  width: 180px;
-}
-.formButton {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 5px;
+
+.error {
+  color: var(--red);
 }
